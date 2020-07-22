@@ -1,6 +1,6 @@
-<a [href]="project.sourceCode" target="_blank">
+<a class="project" [href]="project.sourceCode" target="_blank">
   <div class="card">
-    <nz-card nzHoverable style="width: 560px;" [nzCover]="coverTemplate">
+    <nz-card nzHoverable [nzCover]="coverTemplate">
       <nz-space>
         <nz-space-item
           *ngFor="let technologyLogo of project.technologyLogos"

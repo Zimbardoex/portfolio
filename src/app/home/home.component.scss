@@ -32,3 +32,18 @@ nz-card {
   width: 60%;
   margin: 0 auto;
 }
+
+.projects {
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.project {
+  padding: 1rem;
+  width: 50%;
+  min-width: 350px;
+}
