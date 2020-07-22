@@ -1,25 +1,27 @@
-<div class="card">
-  <nz-card nzHoverable style="width: 560px;" [nzCover]="coverTemplate">
-    <nz-space>
-      <nz-space-item
-        *ngFor="let technologyLogo of project.technologyLogos"
-        nz-space-item
-      >
-        <img
-          class="technology-logo"
-          [src]="technologyLogo.src"
-          [alt]="technologyLogo.altText"
-        />
-      </nz-space-item>
-    </nz-space>
-    <br />
-    <br />
-    <nz-card-meta
-      [nzTitle]="project.name"
-      [nzDescription]="project.description"
-    ></nz-card-meta>
-  </nz-card>
-  <ng-template #coverTemplate>
-    <img alt="Website screen shot." [src]="project.websiteImage" />
-  </ng-template>
-</div>
+<a [href]="project.sourceCode" target="_blank">
+  <div class="card">
+    <nz-card nzHoverable style="width: 560px;" [nzCover]="coverTemplate">
+      <nz-space>
+        <nz-space-item
+          *ngFor="let technologyLogo of project.technologyLogos"
+          nz-space-item
+        >
+          <img
+            class="technology-logo"
+            [src]="technologyLogo.src"
+            [alt]="technologyLogo.altText"
+          />
+        </nz-space-item>
+      </nz-space>
+      <br />
+      <br />
+      <nz-card-meta
+        [nzTitle]="project.name"
+        [nzDescription]="project.description"
+      ></nz-card-meta>
+    </nz-card>
+    <ng-template #coverTemplate>
+      <img alt="Website screen shot." [src]="project.websiteImage" />
+    </ng-template>
+  </div>
+</a>
