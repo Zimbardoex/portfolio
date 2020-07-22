@@ -16,6 +16,7 @@ import { en_US } from 'ng-zorro-antd/i18n';
 import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { HomeComponent } from './home/home.component';
+import { ProjectComponent } from './project/project.component';
 
 
 registerLocaleData(en);
@@ -23,7 +24,8 @@ registerLocaleData(en);
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,
