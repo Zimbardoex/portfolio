@@ -1,46 +1,25 @@
 <div class="card">
   <nz-card nzHoverable style="width: 560px;" [nzCover]="coverTemplate">
     <nz-space>
-      <nz-space-item>
+      <nz-space-item
+        *ngFor="let technologyLogo of project.technologyLogos"
+        nz-space-item
+      >
         <img
           class="technology-logo"
-          src="https://vuejs.org/images/logo.png"
-          alt="Vue framework logo."
-        />
-      </nz-space-item>
-      <nz-space-item>
-        <img
-          class="technology-logo"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQV5HFn-szZBigFeZDu68F9pw3aEBs9XKHcaQ&usqp=CAU"
-          alt="Asp dot net logo."
-        />
-      </nz-space-item>
-      <nz-space-item>
-        <img
-          class="technology-logo"
-          src="../../assets/mongo.png"
-          alt="MongoDB logo."
-        />
-      </nz-space-item>
-      <nz-space-item>
-        <img
-          class="technology-logo"
-          src="https://img.stackshare.io/service/10410/26799900.png"
-          alt="Buefy logo."
+          [src]="technologyLogo.src"
+          [alt]="technologyLogo.altText"
         />
       </nz-space-item>
     </nz-space>
     <br />
     <br />
     <nz-card-meta
-      nzTitle="Vue, Buy and Sell"
-      nzDescription="Auction site created using Vue, C# ASP.NET Core and MongoDb. Still a work in progress but currently includes user authentication with JWT, Buefy for compoent styling, search functionality and many more plans!"
+      [nzTitle]="project.name"
+      [nzDescription]="project.description"
     ></nz-card-meta>
   </nz-card>
   <ng-template #coverTemplate>
-    <img
-      alt="example"
-      src="https://www.websitetooltester.com/wp-content/uploads/2018/01/000webhost-homepage.png"
-    />
+    <img alt="Website screen shot." [src]="project.websiteImage" />
   </ng-template>
 </div>

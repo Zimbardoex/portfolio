@@ -37,4 +37,4 @@
   </div>
 </nz-card>
 
-<app-project [name]="'Vue, Buy and Sell'"></app-project>
+<app-project *ngFor="let project of projects" [project]="project"></app-project>
