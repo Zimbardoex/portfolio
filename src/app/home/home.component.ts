@@ -57,6 +57,23 @@ export class HomeComponent implements OnInit {
           altText: "Buefy logo."
         },
       ]
+    },
+    {
+      name: "Portfolio Website",
+      description: "Yes, how meta of me, my portfolio is on my portfolio. Created with Angular 10 and styled with the NG-ZORRO component libary and style guide.",
+      url: "liamchristens.in",
+      sourceCode: "https://github.com/zimbardoex/portfolio",
+      websiteImage: "../../assets/portfolio.png",
+      technologyLogos: [
+        {
+          src: "../../assets/angular.png",
+          altText: "Angular logo."
+        },
+        {
+          src: "../../assets/ng-zorro.svg",
+          altText: "NG-ZORRO component libary  logo."
+        },
+      ]
     }
   ];
   constructor() { }
