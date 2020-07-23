@@ -19,6 +19,7 @@ import en from '@angular/common/locales/en';
 import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './project/project.component';
 import { CvComponent } from './cv/cv.component';
+import { PdfViewerModule } from 'ng2-pdf-viewer';
 
 
 registerLocaleData(en);
@@ -41,7 +42,8 @@ registerLocaleData(en);
     NzCardModule,
     NzLayoutModule,
     NzSpaceModule,
-    NzTypographyModule
+    NzTypographyModule,
+    PdfViewerModule
   ],
   providers: [{ provide: NZ_I18N, useValue: en_US }],
   bootstrap: [AppComponent]
