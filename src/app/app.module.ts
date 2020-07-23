@@ -18,6 +18,7 @@ import { registerLocaleData } from '@angular/common';
 import en from '@angular/common/locales/en';
 import { HomeComponent } from './home/home.component';
 import { ProjectComponent } from './project/project.component';
+import { CvComponent } from './cv/cv.component';
 
 
 registerLocaleData(en);
@@ -26,7 +27,8 @@ registerLocaleData(en);
   declarations: [
     AppComponent,
     HomeComponent,
-    ProjectComponent
+    ProjectComponent,
+    CvComponent
   ],
   imports: [
     BrowserModule,
