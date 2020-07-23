@@ -1,27 +1,29 @@
-<a class="project" [href]="project.sourceCode" target="_blank">
-  <div class="card">
-    <nz-card nzHoverable [nzCover]="coverTemplate">
-      <nz-space>
-        <nz-space-item
-          *ngFor="let technologyLogo of project.technologyLogos"
-          nz-space-item
-        >
-          <img
-            class="technology-logo"
-            [src]="technologyLogo.src"
-            [alt]="technologyLogo.altText"
-          />
-        </nz-space-item>
-      </nz-space>
-      <br />
-      <br />
-      <nz-card-meta
-        [nzTitle]="project.name"
-        [nzDescription]="project.description"
-      ></nz-card-meta>
-    </nz-card>
-    <ng-template #coverTemplate>
+<div class="card project">
+  <nz-card nzHoverable [nzCover]="coverTemplate">
+    <nz-space nzSize="middle">
+      <nz-space-item *ngFor="let technologyLogo of project.technologyLogos">
+        <img
+          class="technology-logo"
+          [src]="technologyLogo.src"
+          [alt]="technologyLogo.altText"
+        />
+      </nz-space-item>
+      <nz-space-item>
+        <a nz-button nzType="link primary" [href]="project.sourceCode">
+          View Source
+        </a>
+      </nz-space-item>
+    </nz-space>
+    <br />
+    <br />
+    <nz-card-meta
+      [nzTitle]="project.name"
+      [nzDescription]="project.description"
+    ></nz-card-meta>
+  </nz-card>
+  <ng-template #coverTemplate>
+    <a [href]="project.url" target="_blank">
       <img alt="Website screen shot." [src]="project.websiteImage" />
-    </ng-template>
-  </div>
-</a>
+    </a>
+  </ng-template>
+</div>

@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
     {
       name: "Vue, Buy and Sell",
       description: "Auction site created using Vue, C# ASP.NET Core and MongoDB. Still a work in progress but currently includes user authentication with JWT, Buefy for compoent styling, search functionality and many more plans!",
+      url: "http://google.com",
       sourceCode: "https://github.com/Zimbardoex/vue-auction",
       websiteImage: "https://www.websitetooltester.com/wp-content/uploads/2018/01/000webhost-homepage.png",
       technologyLogos: [
