@@ -11,16 +11,16 @@ export class HomeComponent implements OnInit {
     {
       name: "Vue, Buy and Sell",
       description: "Auction site created using Vue, C# ASP.NET Core and MongoDB. Still a work in progress but currently includes user authentication with JWT, Buefy for compoent styling, search functionality and many more plans!",
-      url: "http://google.com",
+      url: null,
       sourceCode: "https://github.com/Zimbardoex/vue-auction",
       websiteImage: "../../assets/vue-buy-sell.png",
       technologyLogos: [
         {
-          src: "https://vuejs.org/images/logo.png",
+          src: "../../assets/vue.png",
           altText: "Vue framework logo."
         },
         {
-          src: "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQV5HFn-szZBigFeZDu68F9pw3aEBs9XKHcaQ&usqp=CAU",
+          src: "../../assets/dotnet.jpeg",
           altText: "Asp dot net logo."
         },
         {
@@ -28,7 +28,32 @@ export class HomeComponent implements OnInit {
           altText: "MongoDB logo."
         },
         {
-          src: "https://img.stackshare.io/service/10410/26799900.png",
+          src: "../../assets/buefy.png",
+          altText: "Buefy logo."
+        },
+      ]
+    },
+    {
+      name: "Media-Analytics.org",
+      description: "Website created in my final year of the degree. Worked in a team of three to provide an accessable portal to statisical word use data gathered from multiple media outlets. Utilises React & Material UI on the front end and Express & MongoDB on the backend.",
+      url: "https://media-analytics.org",
+      sourceCode: "https://github.com/op-analytics/Media-Analytics",
+      websiteImage: "../../assets/media-analytics.png",
+      technologyLogos: [
+        {
+          src: "../../assets/react.png",
+          altText: "React framework logo."
+        },
+        {
+          src: "../../assets/express.png",
+          altText: "ExpressJS logo."
+        },
+        {
+          src: "../../assets/mongo.png",
+          altText: "MongoDB logo."
+        },
+        {
+          src: "../../assets/material-ui.png",
           altText: "Buefy logo."
         },
       ]
