@@ -1,0 +1,29 @@
+<div class="card project">
+  <nz-card nzHoverable [nzCover]="coverTemplate">
+    <nz-space nzSize="middle">
+      <nz-space-item *ngFor="let technologyLogo of project.technologyLogos">
+        <img
+          class="technology-logo"
+          [src]="technologyLogo.src"
+          [alt]="technologyLogo.altText"
+        />
+      </nz-space-item>
+      <nz-space-item>
+        <a nz-button nzType="link primary" [href]="project.sourceCode">
+          View Source
+        </a>
+      </nz-space-item>
+    </nz-space>
+    <br />
+    <br />
+    <nz-card-meta
+      [nzTitle]="project.name"
+      [nzDescription]="project.description"
+    ></nz-card-meta>
+  </nz-card>
+  <ng-template #coverTemplate>
+    <a [href]="project.url" target="_blank">
+      <img class="website-image" alt="Website screen shot." [src]="project.websiteImage" />
+    </a>
+  </ng-template>
+</div>

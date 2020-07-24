@@ -1,0 +1,56 @@
+<nz-card nzSize="small">
+  <div class="profile">
+    <div>
+      <img class="photo" src="assets/photo.png" />
+    </div>
+    <div class="social-content">
+      <h2 class="name-heading" nz-typography>
+        Liam Christensen
+      </h2>
+      <div>
+        <p class="bio">
+          I am a recent graduate ready and excited to move into a web
+          development role. I thrive in a great team, I am passionate about all
+          things computing and embrace learning new technologies.
+        </p>
+      </div>
+      <div class="social-links-container">
+        <nz-space nzSize="middle">
+          <nz-space-item>
+            <a href="https://github.com/zimbardoex" target="_blank">
+              <img class="social-image" src="../../assets/github.png" />
+            </a>
+          </nz-space-item>
+          <nz-space-item>
+            <a href="https://linkedin.com/in/liam-christensen" target="_blank">
+              <img class="social-image" src="../../assets/linkedin.png" />
+            </a>
+          </nz-space-item>
+          <nz-space-item>
+            <a href="mailto:name@email.com">
+              <img
+                class="social-image"
+                src="../../assets/email.png"
+                target="_blank"
+              />
+            </a>
+          </nz-space-item>
+        </nz-space>
+      </div>
+    </div>
+  </div>
+</nz-card>
+
+<div class="subheading-container">
+  <h2 class="subheading" nz-typography>
+    Projects
+  </h2>
+</div>
+
+<div class="projects">
+  <app-project
+    *ngFor="let project of projects"
+    [project]="project"
+    class="project"
+  ></app-project>
+</div>

@@ -1,0 +1,66 @@
+.social-image {
+  height: 60px;
+  margin: 5px;
+}
+
+.photo {
+  width: 100%;
+  object-fit: contain;
+}
+
+.profile {
+  background-color: rgb(250, 250, 250) ;
+  display: flex;
+}
+
+.social-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px 0px 10px;
+  max-width: 500px;
+}
+
+.social-links-container {
+  display: flex;
+  justify-content: center;
+}
+
+nz-card {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.projects {
+  margin: 0 auto;
+  margin-top: 1rem;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+.project {
+  padding: 1rem;
+  width: 50%;
+  min-width: 350px;
+}
+
+.name-heading {
+  font-size: 4rem;
+}
+
+.bio {
+  max-width: 90%;
+}
+
+.subheading-container {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.subheading {
+  margin: 0 auto;
+  text-align: center;
+}

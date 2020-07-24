@@ -1,0 +1,38 @@
+.logo {
+  width: 100px;
+  height: 50px;
+  margin: 8px 24px 32px 0;
+  float: left;
+}
+
+[nz-menu] {
+  line-height: 64px;
+  height: 64px;
+}
+
+nz-breadcrumb {
+  margin: 16px 0;
+}
+
+nz-header {
+  height: 64px;
+}
+
+nz-content {
+  padding: 0 50px;
+}
+
+nz-footer {
+  text-align: center;
+}
+
+.inner-content {
+  background: #fff;
+  padding: 24px;
+  min-height: 280px;
+  margin-top: 32px;
+}
+
+a {
+  background-color: rgba($color: #000000, $alpha: 0);
+}
